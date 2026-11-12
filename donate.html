@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nilesam NGO</title>
+
+    <link rel="stylesheet" href="donate.css">
+</head>
+<body>
+
+<section id="donate">
+    <h2>Support Nilesam NGO</h2>
+    
+    <div class="payment-box">
+
+        <h3>Select Donation Amount</h3>
+
+        <div class="amount-buttons">
+            <button data-amount="100">₹100</button>
+            <button data-amount="500">₹500</button>
+            <button data-amount="1000">₹1000</button>
+            <button data-amount="1500">₹1500</button>
+            <button data-amount="2000">₹2000</button>
+        </div>
+
+        <label for="customAmount">Enter Custom Amount</label>
+        <input type="number" id="customAmount"
+               placeholder="Enter amount in ₹" min="1">
+
+        <h3>Scan UPI QR Code</h3>
+
+        <div id="qrcode"></div>
+
+        <p id="selectedAmount">Selected Amount: ₹100</p>
+
+        <p class="upi-id">
+            UPI ID: 8830607996@ybl
+        </p>
+
+        <button id="payButton">Open UPI App</button>
+
+        <div class="disclaimer">
+            <h3>⚠️ Important Disclaimer</h3>
+            <p>
+                Nilesam NGO is a college academic project
+                created for educational and demonstration
+                purposes only. It is not an officially
+                registered NGO. The UPI ID and QR code
+                belong to a personal account and are
+                displayed for demonstration purposes only.
+                This website is not an official charitable
+                donation platform.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+ <a href="index.html">Back to Home</a>
+
+<!-- QR Code Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<!-- Your Payment JavaScript -->
+<script src="payment.js"></script> 
+
+</body>
+</html>

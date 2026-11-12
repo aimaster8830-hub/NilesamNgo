@@ -1,0 +1,253 @@
+
+/* =================================
+   MAIN WEBSITE CORRECTIONS
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #14241c;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 30px;
+}
+
+header img {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #006400;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #d9480f;
+}
+
+/* Hero Section */
+
+.hero {
+    padding: 60px 30px;
+    border-radius: 25px;
+    background: #e3f1e8;
+}
+
+.hero h1 {
+    font-size: 42px;
+    max-width: 600px;
+}
+
+/* Sections */
+
+section {
+    padding: 40px;
+}
+
+/* Statistics */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    height:100px;
+    padding: 50px 20px;
+}
+
+/* About section */
+
+.about-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.right-content,
+.left-content {
+    flex: 1 1 300px;
+    background: #e6f5e9;
+    padding: 25px;
+    border-radius: 20px;
+    line-height: 1.8;
+}
+
+.left-content li {
+    margin-bottom: 10px;
+}
+
+/* Program cards */
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background: #d9480f;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+/* Donation buttons */
+
+#amounts button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: 2px solid #1f6b4a;
+    background: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#amounts button.active {
+    background: #d9480f;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #006400;
+    color: white;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .program-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+/* Smartphone */
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
+    .program-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .stat-box h2 {
+        font-size: 38px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #amounts button {
+        margin: 5px 2px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+}
